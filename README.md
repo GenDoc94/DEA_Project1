@@ -1,9 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 # DEA_Project1
 
 This assignment uses data from the [UC Irvine Machine Learning
