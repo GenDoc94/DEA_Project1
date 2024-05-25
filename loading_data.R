@@ -13,7 +13,7 @@ rm(linkURL)
 unzip(zipfile = "./data/EPC.zip", exdir = "./data")
 file.remove("./data/EPC.zip")
 hpc <- read.table("./data/household_power_consumption.txt", header = TRUE, sep = ";")
-#file.remove("./data/household_power_consumption.txt")
+#file.remove("./data/household_power_consumption.txt") #or .gitignore! FIRSTLY.
 
 #SUBSETING
 hpc$Date <- as.Date(hpc$Date, format = "%d/%m/%Y")
