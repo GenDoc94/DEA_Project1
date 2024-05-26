@@ -10,13 +10,13 @@ df$Sub_metering_2 <- as.numeric(df$Sub_metering_2)
 df$Sub_metering_3 <- as.numeric(df$Sub_metering_3)
 df$Voltage <- as.numeric(df$Voltage)
 df$Global_reactive_power <- as.numeric(df$Global_reactive_power)
+Sys.setlocale("LC_TIME", "en_US.UTF-8")
 df$Date_Time <- as.POSIXct(paste(df$Date, df$Time), 
                            format = "%Y-%m-%d %H:%M:%S")
 
 #Plot2
-Sys.setlocale("LC_TIME", "en_US.UTF-8")
 png("plot2.png", width=480, height=480)
-plot(df$Date_Time, 
+plot(df$Time2, 
      df$Global_active_power, 
      type = "l", 
      col = "black", 
